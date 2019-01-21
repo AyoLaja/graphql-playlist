@@ -5,7 +5,7 @@ const schema = require('./schema/schema')
 const mongoose = require('mongoose')
 
 //Connect to mLab database
-mongoose.connect('mongodb://ayo_laja:Omowunmi90@ds161794.mlab.com:61794/graphql-playlist', {useNewUrlParser: true})
+mongoose.connect('mongodb://username:password@ds161794.mlab.com:61794/graphql-playlist', {useNewUrlParser: true})
 //Once coonection is open, fire callback function
 mongoose.connection.once('open', () => {
     console.log('Connection to mongoDB instance on mLab successful')

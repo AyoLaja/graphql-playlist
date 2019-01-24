@@ -14,3 +14,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#main h1 {
+  text-align: center; 
+}
+
+#main {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+}
+
+#book-list {
+  padding: 0px;
+}
+
+#book-list li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b00931;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  color: #1a1a1a;
+}
+
+form .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+form label {
+  text-align: right;
+  padding: 5px;
+}
+
+form input, 
+form select {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  /* border-radius: 10px;
+  border-width: 1px; */
+}
+
+form button {
+  color: #fff;
+  font-size: 2em;
+  background: #b00931;
+  border: none;
+  border-radius: 50%;
+  padding: 0px 10px;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+#book-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: rgba(179, 47, 69, 0.801);
+  padding: 60px 20px;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.75)
+}

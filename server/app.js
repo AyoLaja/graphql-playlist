@@ -3,9 +3,13 @@ const app = express()
 const graphqlHTTP = require('express-graphql')
 const schema = require('./schema/schema')
 const mongoose = require('mongoose')
+const cors = require('cors')
+
+//Allow cross origin requests
+app.use(cors())
 
 //Connect to mLab database
-mongoose.connect('mongodb://username:password@ds161794.mlab.com:61794/graphql-playlist', {useNewUrlParser: true})
+mongoose.connect('mongodb://ayo_laja:Omowunmi90@ds161794.mlab.com:61794/graphql-playlist', {useNewUrlParser: true})
 //Once coonection is open, fire callback function
 mongoose.connection.once('open', () => {
     console.log('Connection to mongoDB instance on mLab successful')

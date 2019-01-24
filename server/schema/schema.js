@@ -138,3 +138,7 @@ module.exports = new GraphQLSchema({
     query: RootQuery,
     mutation: Mutation
 })
+
+//NOTES
+//Think about schema as what we can query rather than the structure of a database
+//GraphQL is a type system
